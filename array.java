@@ -23,14 +23,32 @@
 
 
 //STRING
+// public class array {
+//     public static void main(String[] args){
+//         String name = "Prisha";
+//         System.out.println(name);
+//         String reversed = "";
+//         for(int i = name.length() - 1; i >= 0; i--) {
+//             reversed += name.charAt(i);
+//         }
+//         System.out.println(reversed);
+//     }
+// }
+
+//using string builder
+
+// it is not necessary to import the string builder class as it is already included in java.lang
 public class array {
     public static void main(String[] args){
         String name = "Prisha";
         System.out.println(name);
-        String reversed = "";
+
+        StringBuilder reversed = new StringBuilder();
+
         for(int i = name.length() - 1; i >= 0; i--) {
-            reversed += name.charAt(i);
+            reversed.append(name.charAt(i));
         }
-        System.out.println(reversed);
+
+        System.out.println(reversed.toString());
     }
 }
